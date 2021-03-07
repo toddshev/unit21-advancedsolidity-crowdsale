@@ -57,4 +57,21 @@ Once again, you now have access to the crowd sale functionality on the left side
 
 ![CrowdSaleDeployed](Screenshots/CrowdSaleDeployed.png)
 
-Due to lack of Test network Ether I am unable to deploy this on a test network and transfer between wallet addresses at this time.  In order to do so, switch your network on MetaMask to Ropsten, Kovan, or any other network in which you have Ether, and re-deploy using the steps above.  If your accounts do not have sufficient Ether (like mine), you may visit a test faucet and request test Ether, typically once per day.
+## Deploying On A Test Network
+
+_Note:_ Due to lack of Test network Ether I am unable to deploy this on a test network and transfer between wallet addresses at this time.  If your accounts do not have sufficient Ether (like mine), you may visit a test faucet and request test Ether, typically once per day per IP Address.
+
+In order to deploy on a test network, switch your network on MetaMask from local host to Ropsten, Kovan, or any other network in which you have Ether.
+
+![MM_Network](Screenshots/MM_Network.png)
+
+Then you will need to add a new token.  Click _Add Token_ => _Custom Token_
+Then paste in the contract address from the PuppCoin contract (You may copy this from the contract header in the Remix deployment window).
+This will autofill the rest of the fields.
+
+![MM_AddToken1](Screenshots/MM_AddToken1.png) ![MM_AddToken2](Screenshots/MM_AddToken2.png)
+
+Once you click _Next_ and _Add Token_ it will be added to your wallet.
+
+![MM_AddToken3](Screenshots/MM_AddToken3.png)
+
