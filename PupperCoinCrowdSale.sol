@@ -34,10 +34,11 @@ contract PupperCoinCrowdsaleDeployer {
 
     address public token_sale_address;
     address public token_address;
+    uint fakenow = now + 52 weeks; //fake time used to test
 
     constructor(
         // @TODO: Fill in the constructor parameters!
-        string memory _name,
+        string memory _name,  // added underscore since name is often a reserved word
         string memory symbol,
         address payable wallet, // This address will receive all Ether raised by the sale.
         uint goal // the minimum goal in wei units
@@ -52,7 +53,8 @@ contract PupperCoinCrowdsaleDeployer {
         PupperCoinCrowdsale pupper_sale = new PupperCoinCrowdsale(
                 1, //hardcoded, but can be changed
                 wallet, 
-                token, 
+                token,
+                //fakenow,
                 now, 
                 now + 24 weeks, 
                 goal
